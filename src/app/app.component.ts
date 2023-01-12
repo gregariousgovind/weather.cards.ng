@@ -14,11 +14,11 @@ export class AppComponent {
         value: 72,
         max: {
           value: 93,
-          icon: 'fire',
+          icon: 'upArrow',
         },
         min: {
           value: 61,
-          icon: 'fire',
+          icon: 'downArrow',
         },
       },
     },
@@ -34,7 +34,7 @@ export class AppComponent {
         },
         min: {
           value: 18,
-          icon: 'fire',
+          icon: 'snowflake',
         },
       },
     },
