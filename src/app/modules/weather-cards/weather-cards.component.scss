@@ -107,6 +107,22 @@ ul.cards-list {
             font-size: 20px;
             font-weight: 700;
             padding: 5px;
+
+            .card-icon {
+              display: inline-block;
+              width: 12px;
+              height: 12px;
+              margin: 0 5px;
+              background-position: center !important;
+
+              &[attr-size='medium'] {
+                background-size: 15px 15px !important;
+              }
+
+              &[attr-size='small'] {
+                background-size: 10px 10px !important;
+              }
+            }
           }
 
           .max {
@@ -142,21 +158,14 @@ ul.cards-list {
             }
           }
         }
-      }
 
-      .card-icon {
-        display: inline-block;
-        width: 12px;
-        height: 12px;
-        margin: 0 5px;
-        background-position: center !important;
-
-        &[icon-size=medium] {
-          background-size: 15px 15px !important;
-        }
-
-        &[icon-size=small] {
-          background-size: 10px 10px !important;
+        &:not(.temp) .data-scale {
+          .max .card-icon[attr-size='medium'] {
+            background-position: right top !important;
+          }
+          .min .card-icon[attr-size='medium'] {
+            background-position: left bottom !important;
+          }
         }
       }
     }
