@@ -10,7 +10,7 @@ ul.cards-list {
   li.card-container {
     display: flex;
     flex-direction: row;
-    min-width: 180px;
+    min-width: 168px;
     min-height: 100px;
     margin: 8px;
 
@@ -59,6 +59,28 @@ ul.cards-list {
           color: #5448c8;
           text-align: center;
           border-radius: 50%;
+
+          .out-of {
+            position: relative;
+            font-size: 14px;
+            margin-right: 12px;
+
+            &::before {
+              content: '/';
+            }
+
+            &::after {
+              content: '';
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              transform: translateX(5px);
+              display: block;
+              width: 1px;
+              height: 36px;
+              background: #dddddd;
+            }
+          }
         }
 
         .status {
@@ -89,6 +111,21 @@ ul.cards-list {
 
           .max {
             border-bottom: 1px solid #dddddd;
+          }
+        }
+
+        .data-status {
+          .field-name {
+            color: #999999;
+            text-transform: capitalize;
+            font-size: 10px;
+            margin-top: 10px;
+          }
+          
+          .field-value {
+            font-size: 16px;
+            color: #2d2d2d;
+            font-weight: 700;
           }
         }
 
