@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Rota';
+  src: url('assets/fonts/Rota-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rota';
+  src: url('assets/fonts/Rota-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rota';
+  src: url('assets/fonts/Rota-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rota';
+  src: url('assets/fonts/Rota-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Rota', sans-serif;
+}
