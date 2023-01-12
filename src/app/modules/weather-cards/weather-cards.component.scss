@@ -25,15 +25,19 @@ ul.cards-list {
 
       &.scale {
         .card-body {
-          .value {
-            padding: 10px;
+          .value-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-size: 36px;
+            min-width: 60px;
+            height: 60px;
             color: #ffffff;
             background: #6dd0a5;
           }
 
           &.temp {
-            .value,
+            .value-container .value,
             .max,
             .min {
               &:after {
@@ -43,8 +47,9 @@ ul.cards-list {
               }
             }
 
-            .value {
+            .value-container {
               background: #5448c8;
+              font-size: 28px;
             }
           }
         }
@@ -52,7 +57,7 @@ ul.cards-list {
 
       h3.card-title {
         color: #2d2d2d;
-        font-size: 16px;
+        font-size: 14px;
         text-transform: capitalize;
         margin-top: 0;
         margin-bottom: 4px;
@@ -62,7 +67,7 @@ ul.cards-list {
         display: flex;
         width: 100%;
 
-        .value {
+        .value-container {
           font-weight: 700;
           font-size: 40px;
           color: #5448c8;
@@ -76,6 +81,7 @@ ul.cards-list {
 
             &::before {
               content: '/';
+              font-size: 16px;
             }
 
             &::after {
@@ -93,13 +99,13 @@ ul.cards-list {
         }
 
         .status {
-          height: 14px;
+          height: 12px;
           color: #ffffff;
           background: #6dd0a5;
-          font-size: 12px;
+          font-size: 10px;
           text-transform: uppercase;
           border-radius: 4px;
-          padding: 2px 10px;
+          padding: 2px 8px;
           margin: 5px;
         }
 

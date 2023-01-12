@@ -6,9 +6,9 @@
         class="card-body"
         [ngClass]="{ temp: card.data.valueType == 'temp' }"
       >
-        <div class="value">
-          {{ card.data.value
-          }}<span class="out-of" *ngIf="card.data.valueOutOf">{{
+        <div class="value-container">
+          <span class="value">{{ card.data.value }}</span>
+          <span class="out-of" *ngIf="card.data.valueOutOf">{{
             card.data.valueOutOf
           }}</span>
         </div>
