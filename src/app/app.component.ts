@@ -1,6 +1,6 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 
-const cards = [
+const cardsData = [
   {
     type: 'scale',
     title: 'air quality',
@@ -75,22 +75,8 @@ const cards = [
 })
 export class AppComponent {
   public cards: any[];
-  public cardsData: string;
-
-  @ViewChild('cardsData', { static: true }) textarea: ElementRef;
 
   ngOnInit() {
-    this.cards = cards;
-    this.cardsData = JSON.stringify({ cards: this.cards });
-  }
-
-  ngAfterViewInit() {
-    this.textarea.nativeElement.addEventListener('ngModelChange', (event) => {
-      try {
-        this.cards = JSON.parse(event);
-      } catch (e) {
-        alert(e);
-      }
-    });
+    this.cards = cardsData;
   }
 }
