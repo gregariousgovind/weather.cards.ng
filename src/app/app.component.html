@@ -7,3 +7,9 @@
   ></i>
 </header>
 <weather-cards [cards]="cards"></weather-cards>
+
+<!-- Extra feature to change the cards data -->
+<details class="more-cards">
+  <summary>Add more cards</summary>
+  <textarea #cardsData name="cardsData" [(ngModel)]="cardsData"></textarea>
+</details>
