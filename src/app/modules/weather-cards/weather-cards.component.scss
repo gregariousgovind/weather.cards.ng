@@ -149,8 +149,15 @@ ul.cards-list {
         width: 12px;
         height: 12px;
         margin: 0 5px;
-        background-size: 10px 10px !important;
         background-position: center !important;
+
+        &[icon-size=medium] {
+          background-size: 15px 15px !important;
+        }
+
+        &[icon-size=small] {
+          background-size: 10px 10px !important;
+        }
       }
     }
   }
