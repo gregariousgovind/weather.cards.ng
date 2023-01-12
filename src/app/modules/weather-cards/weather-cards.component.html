@@ -1,62 +1,27 @@
 <ul class="cards-list">
   <li class="card-container" *ngFor="let card of cards">
-    <div class="card number">
-      <h3 class="card-title">Air Quality</h3>
-      <div class="card-body">
-        <div class="value">72</div>
-        <div class="data-indicator">
-          <div class="min">93</div>
-          <div class="max">61</div>
+    <div class="card {{ card.type }}">
+      <h3 class="card-title">{{ card.title }}</h3>
+      <div
+        class="card-body"
+        [ngClass]="{ temp: card.data.valueType == 'temp' }"
+      >
+        <div class="value">
+          {{ card.data.value
+          }}<span class="out-of" *ngIf="card.data.valueOutOf">{{
+            card.data.valueOutOf
+          }}</span>
         </div>
-      </div>
-    </div>
-  </li>
-  <li class="card-container">
-    <div class="card temp">
-      <h3 class="card-title">Temperature</h3>
-      <div class="card-body">
-        <div class="value">21<span class="temperature">&#8451;</span></div>
-        <div class="data-indicator">
-          <div class="min">93<span class="temperature">&#8451;</span></div>
-          <div class="max">61<span class="temperature">&#8451;</span></div>
+        <div *ngIf="card.data.status" class="status">
+          {{ card.data.status }}
         </div>
-      </div>
-    </div>
-  </li>
-  <li class="card-container">
-    <div class="card action">
-      <h3 class="card-title">Audio</h3>
-      <div class="card-body">
-        <div class="value">2</div>
-        <div class="status">PLAYING</div>
-        <div class="field">
-          <div class="field-name">Total</div>
-          <div class="field-value">5</div>
+        <div class="data-{{ card.type }}" *ngIf="card.type == 'scale'">
+          <div class="max">{{ card.data.maxValue }}</div>
+          <div class="min">{{ card.data.minValue }}</div>
         </div>
-      </div>
-    </div>
-  </li>
-  <li class="card-container">
-    <div class="card">
-      <h3 class="card-title">Displays</h3>
-      <div class="card-body">
-        <div class="value">10<span class="out-of">/16</span></div>
-        <div class="field">
-          <div class="field-name">On Time</div>
-          <div class="field-value">00:00</div>
-        </div>
-      </div>
-    </div>
-  </li>
-  <li class="card-container">
-    <div class="card action">
-      <h3 class="card-title">Lighting</h3>
-      <div class="card-body">
-        <div class="value">32</div>
-        <div class="status">ON</div>
-        <div class="field">
-          <div class="field-name">Total</div>
-          <div class="field-value">43</div>
+        <div class="data-{{ card.type }}" *ngIf="card.type == 'status'">
+          <div class="field-name">{{ card.data.fieldName }}</div>
+          <div class="field-value">{{ card.data.fieldValue }}</div>
         </div>
       </div>
     </div>
