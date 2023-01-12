@@ -16,7 +16,7 @@ li.card-container {
 
     &:hover {
       box-shadow: #dddddd 4px 4px 8px 0 inset, #ffffff 4px -4px 8px 0 inset;
-      transition: box-shadow 800ms;
+      transition: box-shadow 500ms;
     }
 
     &.scale {
@@ -106,7 +106,7 @@ li.card-container {
 
         &:hover {
           box-shadow: #6dd0a5 1px 1px 2px 0, #ffffff 1px -1px 2px 0;
-          transition: box-shadow 400ms;
+          transition: box-shadow 500ms;
         }
       }
 
