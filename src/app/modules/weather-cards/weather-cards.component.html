@@ -16,8 +16,24 @@
           {{ card.data.status }}
         </div>
         <div class="data-{{ card.type }}" *ngIf="card.type == 'scale'">
-          <div class="max">{{ card.data.maxValue }}</div>
-          <div class="min">{{ card.data.minValue }}</div>
+          <div class="max">
+            <i
+              class="card-icon"
+              [ngStyle]="{
+                'background-image': 'url(../../assets/icons/fire.svg)'
+              }"
+            ></i
+            >{{ card.data.maxValue }}
+          </div>
+          <div class="min">
+            <i
+              class="card-icon"
+              [ngStyle]="{
+                'background-image': 'url(../../assets/icons/fire.svg)'
+              }"
+            ></i
+            >{{ card.data.minValue }}
+          </div>
         </div>
         <div class="data-{{ card.type }}" *ngIf="card.type == 'status'">
           <div class="field-name">{{ card.data.fieldName }}</div>
