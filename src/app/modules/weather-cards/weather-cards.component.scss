@@ -74,7 +74,7 @@ ul.cards-list {
               position: absolute;
               right: 0;
               bottom: 0;
-              transform: translateX(5px);
+              transform: translateX(10px);
               display: block;
               width: 1px;
               height: 36px;
@@ -115,13 +115,15 @@ ul.cards-list {
         }
 
         .data-status {
+          margin: 0 10px;
+
           .field-name {
             color: #999999;
             text-transform: capitalize;
             font-size: 10px;
             margin-top: 10px;
           }
-          
+
           .field-value {
             font-size: 16px;
             color: #2d2d2d;
@@ -144,5 +146,3 @@ ul.cards-list {
     }
   }
 }
-
-
