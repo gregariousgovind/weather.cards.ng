@@ -1,0 +1,48 @@
+<li class="card-container">
+  <div class="card {{ card.type }}">
+    <h3 class="card-title">{{ card.title }}</h3>
+    <div class="card-body" [ngClass]="{ temp: card.data.valueType == 'temp' }">
+      <div class="value-container">
+        <span class="value">{{ card.data.value }}</span>
+        <span class="out-of" *ngIf="card.data.valueOutOf">{{
+          card.data.valueOutOf
+        }}</span>
+      </div>
+      <div *ngIf="card.data.status" class="status">
+        {{ card.data.status }}
+      </div>
+      <div class="data-{{ card.type }}" *ngIf="card.type == 'scale'">
+        <div class="max">
+          <i
+            class="card-icon"
+            [ngStyle]="{
+              background:
+                'url(../../assets/icons/' +
+                card.data.max.icon +
+                '.svg) no-repeat'
+            }"
+            [attr.attr-size]="card.data.max.iconSize"
+          ></i
+          >{{ card.data.max.value }}
+        </div>
+        <div class="min">
+          <i
+            class="card-icon"
+            [ngStyle]="{
+              background:
+                'url(../../assets/icons/' +
+                card.data.min.icon +
+                '.svg) no-repeat'
+            }"
+            [attr.attr-size]="card.data.max.iconSize"
+          ></i
+          >{{ card.data.min.value }}
+        </div>
+      </div>
+      <div class="data-{{ card.type }}" *ngIf="card.type == 'status'">
+        <div class="field-name">{{ card.data.fieldName }}</div>
+        <div class="field-value">{{ card.data.fieldValue }}</div>
+      </div>
+    </div>
+  </div>
+</li>
