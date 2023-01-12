@@ -81,7 +81,7 @@ export class AppComponent {
 
   ngOnInit() {
     this.cards = cards;
-    this.cardsData = JSON.stringify({ cards });
+    this.cardsData = JSON.stringify({ cards: this.cards });
   }
 
   ngAfterViewInit() {
