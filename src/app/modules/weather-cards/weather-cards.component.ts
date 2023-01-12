@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./weather-cards.component.scss'],
 })
 export class WeatherCards {
-  @Input() cards;
+  @Input() cards: any[];
 }
