@@ -1,6 +1,6 @@
-# weather.cards.ng
+# notification-cards
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-ivy-lyrphy)
+[Check it on StackBlitz](https://stackblitz.com/edit/angular-ivy-lyrphy)
 
 # Frontend-Developer-Task
 
@@ -17,10 +17,6 @@
 │   ├── snowflake.svg
 │   └── Rota_fonts.zip
 ```
-
-## Output
-
-![Design](./ui_design_resources/design.png)
 
 ## Tech Stack
 
