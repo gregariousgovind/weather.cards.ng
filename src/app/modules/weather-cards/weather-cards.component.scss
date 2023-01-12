@@ -27,13 +27,22 @@ ul.cards-list {
         .card-body {
           .value {
             padding: 10px;
-            font-weight: 600;
             font-size: 36px;
             color: #ffffff;
             background: #6dd0a5;
           }
 
           &.temp {
+            .value,
+            .max,
+            .min {
+              &:after {
+                content: '°C';
+                font-size: 10px;
+                font-weight: 500;
+              }
+            }
+
             .value {
               background: #5448c8;
             }
@@ -144,18 +153,6 @@ ul.cards-list {
             font-size: 16px;
             color: #2d2d2d;
             font-weight: 700;
-          }
-        }
-
-        &.temp {
-          .value,
-          .max,
-          .min {
-            &:after {
-              content: '°C';
-              font-size: 10px;
-              font-weight: 500;
-            }
           }
         }
 
