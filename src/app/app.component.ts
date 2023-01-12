@@ -12,8 +12,14 @@ export class AppComponent {
       title: 'air quality',
       data: {
         value: 72,
-        maxValue: 93,
-        minValue: 61,
+        max: {
+          value: 93,
+          icon: 'fire',
+        },
+        min: {
+          value: 61,
+          icon: 'fire',
+        },
       },
     },
     {
@@ -22,8 +28,14 @@ export class AppComponent {
       data: {
         value: 21,
         valueType: 'temp', // configure to add °C after value
-        maxValue: 26,
-        minValue: 18,
+        max: {
+          value: 26,
+          icon: 'fire',
+        },
+        min: {
+          value: 18,
+          icon: 'fire',
+        },
       },
     },
     {

@@ -20,19 +20,25 @@
             <i
               class="card-icon"
               [ngStyle]="{
-                'background-image': 'url(../../assets/icons/fire.svg)'
+                background:
+                  'url(../../assets/icons/' +
+                  card.data.max.icon +
+                  '.svg) no-repeat'
               }"
             ></i
-            >{{ card.data.maxValue }}
+            >{{ card.data.max.value }}
           </div>
           <div class="min">
             <i
               class="card-icon"
               [ngStyle]="{
-                'background-image': 'url(../../assets/icons/fire.svg)'
+                background:
+                  'url(../../assets/icons/' +
+                  card.data.min.icon +
+                  '.svg) no-repeat'
               }"
             ></i
-            >{{ card.data.minValue }}
+            >{{ card.data.max.value }}
           </div>
         </div>
         <div class="data-{{ card.type }}" *ngIf="card.type == 'status'">
