@@ -80,3 +80,21 @@ export class AppComponent {
     this.cards = cardsData;
   }
 }
+
+// const apiCardsData = [
+//   {
+//     cards: 5,
+//     data: [
+//       { name: 'Air Quality', value: 72, hi: 93, lo: 61 },
+//       { name: 'Temperature', value: 21, hi: 25, lo: 18, format: 'C' },
+//       { name: 'Audio', value: 5, total: 10 },
+//       { name: 'Displays', value: 10, total: 16, on_time: '21:00' },
+//       { name: 'Lighting', value: 32, total: 43 },
+//     ],
+//   },
+// ];
+// this.http
+//   .get('https://637ae5e510a6f23f7f9aacbc.mockapi.io/dashboard')
+//   .subscribe((res) => {
+//     this.cards = res[0].data;
+//   });
