@@ -96,7 +96,7 @@ Add the plugin metadata in your project metadata file
 ## Dependencies
 ```
 {
-	"@nexxe/shared": "0.0.0-next.5",
+  "@nexxe/shared": "0.0.0-next.5",
   "@nexxe/core": "0.0.1-alpha.15",
   "@nexxe/core-types": "0.0.1-alpha.23",
   '@nexxe/plugin-injector': '0.0.1-alpha.7',
@@ -123,12 +123,12 @@ https://smartbygep.atlassian.net/wiki/spaces/NEXXEFRONTEND/pages/3318841372/NEXX
 
 ### Version: 3.1.18
 >* Ticket: GBFORM-1329
->* WCAG Enhancement: 
-  1. Outlines/borders must appear only when user focuses on the element using keyboard.
-  2. When user focuses on the element using mouse, outlines/borderd must not appear.
+>* WCAG Enhancement:
+>* Outlines/borders must appear only when user focuses on the element using keyboard.
+>* When user focuses on the element using mouse, outlines/borderd must not appear.
 >* Solution:
-  1. Use focus-visible instead of focus in all regions.
-  2. In button plugin, focus-visible has been used instead of focus wherever code for outlines or borders are executed.
+>* Use focus-visible instead of focus in all regions.
+>* In button plugin, focus-visible has been used instead of focus wherever code for outlines or borders are executed.
 >* Author name: <aakash.padhy@gep.com>
 
 ### Version: 3.0.17
@@ -145,7 +145,7 @@ https://smartbygep.atlassian.net/wiki/spaces/NEXXEFRONTEND/pages/3318841372/NEXX
 >* Ticket: CLI-360951
 >* Enhancement: Announcing shortcut keys at the beginning of each section for user convenience.
 >* Solution:
-  1. Registration of all shortcut messages to our accessibility service through tabbableTitle/Blocktitle. Changes are implemented in button and shared(accessibility.service.ts).
-  2. Creation of an announcement element within the layer, containing the list of all the shortcuts. Changes are implemented in shared(accessibility.service.ts).
-  3. Integration of the reference to the announcement element into the widget sections. Changes are implemented in nexgen-widget-manager(item.component.html).
+>* Registration of all shortcut messages to our accessibility service through tabbableTitle/Blocktitle. Changes are implemented in button and shared(accessibility.service.ts).
+>* Creation of an announcement element within the layer, containing the list of all the shortcuts. Changes are implemented in shared(accessibility.service.ts).
+>* Integration of the reference to the announcement element into the widget sections. Changes are implemented in nexgen-widget-manager(item.component.html).
 >* Author  name: <aakash.padhy@gep.com>
