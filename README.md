@@ -1,7 +1,8 @@
-# Button Plugin Documentation
+<h1 align="center">Button Plugin Documentation</h1>
 
-##  Quantum Button
-New generations buttons
+<h2 align="center">Quantum Button</h2>
+
+<p align="center">New generations buttons</p>
 
 ## Table of contents
 * [General info](#general-info)
